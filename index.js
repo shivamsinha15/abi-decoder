@@ -130,7 +130,8 @@ function _decodeLogs(logs) {
       method.inputs.map(function (param) {
         var decodedP = {
           name: param.name,
-          type: param.type
+          type: param.type,
+          blockNumber: logItem.blockNumber,
         };
 
         if (param.indexed) {
